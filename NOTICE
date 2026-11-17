@@ -1,0 +1,21 @@
+Plif
+Copyright 2026 PlifResearch e colaboradores.
+
+Este programa é software livre, licenciado sob a GNU General Public License versão 3 ou posterior. O texto completo está em LICENSE.
+
+Dependências de terceiros usadas em tempo de execução:
+- @anthropic-ai/sdk: Apache-2.0 (Anthropic)
+- openai: Apache-2.0 (OpenAI)
+- undici: MIT (Node.js contributors)
+- @modelcontextprotocol/sdk: MIT (Anthropic, PBC)
+- zod: MIT
+- fast-glob: MIT
+- ink: MIT
+- react: MIT
+- smol-toml: BSD-3-Clause
+
+Dependências usadas só no desenvolvimento e nos testes:
+- typescript: Apache-2.0
+- @types/node: MIT
+- @types/react: MIT
+- ink-testing-library: MIT

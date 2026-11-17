@@ -1,0 +1,48 @@
+{
+  "name": "plif",
+  "version": "0.1.0",
+  "description": "Agente pessoal de código que roda no computador do usuário.",
+  "scripts": {
+    "test": "npm run build && node --test \"dist/core/test/**/*.test.js\"",
+    "build": "tsc -p tsconfig.json && node scripts/link-dev.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node dist/core/src/cli.js",
+    "test:bun": "bun test --path-ignore-patterns \"Examples/**\" --path-ignore-patterns \"dist/**\" --path-ignore-patterns \"node_modules/**\" core/test",
+    "golden": "node dist/core/src/golden-run.js",
+    "demo:tools": "node scripts/demo-tools.mjs"
+  },
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.6.0",
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@mozilla/readability": "^0.6.0",
+    "fast-glob": "^3.3.3",
+    "ignore": "^7.0.14",
+    "ink": "^8.0.0",
+    "jsdom": "^31.0.1",
+    "lowlight": "^3.3.0",
+    "marked": "^18.2.0",
+    "openai": "^7.53.0",
+    "react": "^19.3.1",
+    "smol-toml": "^1.9.1",
+    "turndown": "^7.2.5",
+    "undici": "^8.12.4",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/turndown": "^5.0.6",
+    "ink-testing-library": "^4.0.0",
+    "typescript": "^5.9.3"
+  },
+  "bin": {
+    "plif": "dist/core/src/cli.js"
+  }
+}

@@ -1,0 +1,25 @@
+# Arquivos locais do Claude e referências de estudo: nunca vão para o repositório
+CLAUDE.md
+.claude/
+Examples/
+
+# Dependências e builds
+node_modules/
+dist/
+target/
+.turbo/
+coverage/
+
+# Segredos e estado local
+.env
+.env.*
+!.env.example
+.plif/local/
+*.log
+.DS_Store
+Mapper.md
+
+# Documentos de trabalho dos agentes: ficam só na máquina
+docs/
+AGENTS.md
+design/
